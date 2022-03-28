@@ -1,0 +1,24 @@
+<form action="/output" method="POST">
+  <div class="imgcontainer">
+    <img src="static/styles/CRIMINAL_HOMMIE.png" alt="homie" class="homie">
+  </div>
+
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+
+  <div class="container">
+    <label for="roll_no"><b>Roll No</b></label>
+    <input type="number" placeholder="Enter Roll No" name="roll_no" required>
+
+    <label for="aadhaar"><b>Aadhaar</b></label>
+    <input type="number" placeholder="Enter Aadhaar" name="aadhaar" min = "000000000000" max = "999999999999" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
